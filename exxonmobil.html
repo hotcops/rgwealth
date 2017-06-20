@@ -51,65 +51,8 @@
 
     <div id="wrapper"> <!--START OF WRAPPER-->
 
-   <!-- NAVBAR -->
-    <nav id="Nav" class="navbar navbar-dark navbar-fixed-top nav-collapse2" role="navigation">
-      <div class="container">
-        <div class="col-xs-4 left">
-          <a class="btn secondary btn-block yellow-outline" href="https://rhamegorrell.portal.tamaracinc.com/Login.aspx?ReturnUrl=%2f" rel="noopener noreferrer" target="_blank" style="max-width:150px;">Client Portal</a>
-        </div>
-        <div class="col-xs-4 right">
-          <a class="btn secondary btn-block yellow-outline" href="contact-us.html" rel="noopener noreferrer" style="max-width:150px; float: right;">Contact Us</a>
-        </div>
-        <div class="col-xs-4 centered">
-          <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-            <i class="fa fa-bars"></i>
-          </button>
-          <a class="navbar-brand left" href="index.html">
-            <span class="logo"
-              <h1>
-                <img src="images/rg-wealth-logo-1.jpg" alt="Rhame &amp; Gorrell Logo" />
-              </h1>
-            </span>
-          </a>
-        </div>
-        </div>
-      </div>
-      <div class="fill">      
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="col-xs-12">
-          <div class="collapse navbar-collapse navbar-centered navbar-main-collapse">
-            <ul class="nav navbar-nav">
-              <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-              <li class="hidden">
-                <a href="#page-top"></a>
-              </li>
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="our-mission.html">Our Firm</a>
-              </li>
-              <li>
-                <a href="about-us.html">Our Team</a>
-              </li>
-              <li>
-                <a href="events.html">Events</a>
-              </li>
-              <li>
-                <a href="exxonmobil.html">ExxonMobil Employees</a>
-              </li>
-              <li>
-                <a href="#">Wealth Management</a>
-              </li>            
-              <li>
-                <a href="#">Tax &amp; Estate Planning</a>
-              </li>
-            </ul>
-          </div>
-        </div>   
-      </div>
-    </nav>
+      <!-- NAVBAR -->
+       <ng-include src="'_partials/_navbar-v2.html'"></ng-include>
 
         <header id="myCarousel" class="carousel slide carousel-fade intro-slider" style="max-height: 40%">
 
@@ -203,35 +146,7 @@
 
 
   <!-- FOOTER -->
-<footer class="footer-1">
-  <div class="container">
-    <div class="row">
-       <div class="col-xs-12 col-sm-2">
-          <h4>EMAIL</h4>
-          <a href="mailto:service@rgwealth.com" target="_blank">service@rgwealth.com</a>
-        </div>
-         <div class="col-xs-12 col-sm-3">
-           <h4>PHONE</h4>
-             <a href="tel:832-789-1100">(832) 789-1100</a>
-             <br>
-             <a href="tel:888-332-8108">(888) 332-8108</a>
-         </div>
-         <div class="col-xs-12 col-sm-4">
-           <h4>ADDRESS</h4>
-           <a href="https://goo.gl/maps/DcqffdT22p32" target="_blank">
-             1330 Lake Robbins Drive, Suite 360
-             <br>
-             The Woodlands, TX 77380
-           </a>
-         </div>
-         <div class="col-xs-12 col-sm-3">
-           <p>
-             <a class="btn secondary btn-block yellow-outline" style="padding: 10px 0px; max-width: 300px; margin: 20px auto;" href="https://rhamegorrell.portal.tamaracinc.com/Login.aspx?ReturnUrl=%2f" rel="noopener noreferrer" target="_blank">Client Portal</a>
-           </p>
-         </div>
-       </div>
-     </div>
-</footer>
+      <ng-include src="'_partials/_footer.html'"></ng-include>
 
 
     </div> <!--close of wrapper-->
@@ -352,6 +267,16 @@
     <script src="assets/js/plugins/jqBootstrapValidation/jqBootstrapValidation.js"></script>
     <script src="assets/js/contact_me.js"></script>
     <script src="assets/js/plugins/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- ANGULAR.JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!-- <script src="scripts/angular-app.js"></script> THIS ISN'T WORKING - SCRIPT INSERTED BELOW -->
+    <script>
+      var app = angular.module('myApp', []);
+      app.controller('myCtrl', function($scope) {
+          $scope.name = "John Doe";
+      });
+    </script>
 
     <!-- Spectrum JavaScript Files -->
     <script src="assets/js/spectrum.nav.js"></script>
