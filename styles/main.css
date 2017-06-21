@@ -55,7 +55,7 @@ ul.nav li:hover > ul.dropdown-menu {
   text-align: right;
 }
 
-/******** FOR THE BIO PAGE *********/ /* CURRENTLY NOT IN USE!! */
+/******** FOR THE BIO PAGE *********/
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 
@@ -186,6 +186,11 @@ body {
     letter-spacing: 1px;
 }
 
+.img-centered {
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
 
 /******** FOR THE NAVBAR *********/
