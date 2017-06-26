@@ -27,10 +27,6 @@ footer {
 .nav-buttons {
   width: 145px;
 }
-.nav-buttons-xs {
-  height: 15px;
-  width: 115px;
-}
 
 .yellow-solid {
   color: #ffa100;
@@ -265,5 +261,10 @@ body {
         margin-top: 10px;
         margin-left: -10;
         max-width: 90%;
+    }
+}
+@media (min-width: 767px) and (max-width: 903px) {
+  body {
+        margin-top: 50px;
     }
 }
