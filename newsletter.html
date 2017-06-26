@@ -7,7 +7,7 @@
     <meta name="" content="">
     <meta name="Shane Pizzutello" content="Shane Pizzutello">
 
-    <title>R&amp;G | Contact Us</title>
+    <title>R&amp;G | Newsletter</title>
 
     <!-- NORMAILZE CSS -->
     <link href="styles/normalize.css" rel="stylesheet" type="text/css" />
@@ -59,98 +59,51 @@
 
         <!-- CONTACT US -->
         <section class="contact-1 bg-lighter text-center">
-            <div class="container">
+            <div class="container" style="max-width:95%;">
               <div class="row">
-                <h1 style="font-size:3.2em;">
-                  Contact Us
+                <h1 style="font-size:300%;">
+                  Insights Newsletter
                 </h1>
                 <hr class="primary default-gray">
-              </div>
-                <div class="row">
-                  <div class="col-lg-7">
-                      <div class="row">
-                        <h3>
-                          While every conversation is different, you should expect to cover some general information and get a sense of what it’s like to collaborate with us.
-                        </h3>
-                        <br>
-                      </div>
-                      <div class="row">
-                        <p>
-                          To help prepare for this meeting, you should have a basic idea of your current financial picture and financial goals. How are things now? Do you have any concerns? What do you hope to accomplish in the next few years and longer term?
-                        </p>
-                      </div>
-                      <br>
-                      <form role="form">
-                          <div class="row">
-                              <div class="form-group col-xs-12 floating-label-form-group">
-                                  <label>Name</label>
-                                  <input class="form-control" type="text" name="name" placeholder="Name">
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="form-group col-xs-12 floating-label-form-group">
-                                  <label>Email Address</label>
-                                  <input class="form-control" type="email" name="email" placeholder="Email Address">
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="form-group col-xs-12 floating-label-form-group">
-                                  <label>Message</label>
-                                  <textarea placeholder="Message" class="form-control" rows="5"></textarea>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="form-group col-xs-12">
-                                  <a class="btn secondary btn-block yellow-outline" style="padding: 10px 0px; max-width: 300px; margin: 20px auto;" href="https://rhamegorrell.portal.tamaracinc.com/Login.aspx?ReturnUrl=%2f" rel="noopener noreferrer" target="_blank">SEND</a>
-                              </div>
-                          </div>
-                      </form>
-                  </div>
-
-                  <div class="col-lg-4 col-lg-offset-1">
-                    <aside class="sidebar">
-                      <h4><u>LOCATION</u></h4>
-                        <p>
-                          <a href="https://goo.gl/maps/DcqffdT22p32" target="_blank">
-                          1330 Lake Robbins Drive, Suite 360
-                          <br>
-            		          The Woodlands, TX 77380
-                          </a>
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.637747621882!2d-95.45734448496827!3d30.161771281839776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864736eacc6ff0c1%3A0x3fc8bf687d6eee85!2s1330+Lake+Robbins+Dr+%23360%2C+The+Woodlands%2C+TX+77380!5e0!3m2!1sen!2sus!4v1497550496523" width="330" height="215" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                        </p>
-                      <h4><strong>Office Hours</strong></h4>
-                      <p>
-                        Monday - Thursday
-                        <br>
-                        8:00AM - 4:30PM
-                        <br>
-                        Friday
-                        <br>
-                        8:00AM - 4:00PM
-                      </p>
-                      <h4><u>CONTACT</u></h4>
-                      <p>
-                        <strong>Email</strong>:
-                        <br>
-                        <a href="mailto:service@rgwealth.com" target="_blank">service@rgwealth.com</a>
-                      </p>
-                      <p>
-                        <strong>Phone</strong>:
-                        <br>
-                        <a href="tel:832-789-1100">(832) 789-1100</a>
-                        <br>
-          		          <a href-"tel:888-332-8108">(888) 332-8108</a>
-                      </p>
-                      <p>
-                        <strong>Fax</strong>:
-                        <br>(832) 789-1110
-                      </p>
-                    </aside>
-                  </div>
+                <div class="left">
+                  <h3>
+                    Will you outlive your retirement income? Are your financial expectations for the coming year realistic?
+                  </h3>
+                  <br />
+                  <p>
+                    Our financial newsletters are designed to provide helpful information on a wide variety of financial topics. Simply sign up below to begin receiving our monthly Insights Newsletter.
+                  </p>
                 </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                      <div class="form-group col-xs-12">
+                        <a class="btn secondary btn-block yellow-outline" style="padding: 10px 0px; max-width: 300px; margin: 20px auto;" rel="noopener noreferrer" target="_blank">Sign Up</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
 
         <!-- FOOTER -->
       <ng-include src="'partials/_footer.html'"></ng-include>
