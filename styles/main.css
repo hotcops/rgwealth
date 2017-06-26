@@ -24,6 +24,14 @@ footer {
   padding: 20px 0px 30px;
 }
 
+.nav-buttons {
+  width: 145px;
+}
+.nav-buttons-xs {
+  height: 15px;
+  width: 115px;
+}
+
 .yellow-solid {
   color: #ffa100;
   background-color: #ffa100;
@@ -248,9 +256,17 @@ body{
   background-color: #f6f6f7;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
     .logo {
-        margin-top: 7px;
+        margin-top: 15px;
+        margin-left: -10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo {
+        margin-top: 10px;
+        margin-left: -10;
         max-width: 90%;
     }
 }
