@@ -18,6 +18,11 @@ body {
   background-color: #fdfdfd;
 }
 
+.contact-1,
+.about-3 {
+  background-color: #f7f5ef;
+}
+
 footer {
   background-color: #1f202b;
   color: #b6b6b6;
