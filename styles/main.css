@@ -23,6 +23,11 @@ body {
   background-color: #f7f5ef;
 }
 
+.icon-logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
 footer {
   background-color: #1f202b;
   color: #b6b6b6;
@@ -41,6 +46,11 @@ footer {
 .yellow-outline {
   color: #ffa100;
   border-color: #ffa100;
+}
+
+.expired-outline {
+  color: #5d5e5e;
+  border-color: #5d5e5e;
 }
 
 .default-gray {
